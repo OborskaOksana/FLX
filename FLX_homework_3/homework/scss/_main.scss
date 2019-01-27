@@ -1,0 +1,374 @@
+// Write your styles here
+body {
+  background: $contentBackground;
+  font-family: $font-family;
+  background-image: $background-image;
+  padding-top: 0px;
+  top: 0;
+  left: 0;
+  background-repeat: no-repeat;
+  background-position: center top;
+}
+
+input {
+  height: 100%;
+  width: 100%;
+
+}
+
+textarea {
+  @extend input;
+
+}
+
+img {
+  width: 40%;
+  height: 40%;
+}
+
+.main-wrapper {
+  width: 960px;
+  margin: 0 auto;
+
+  h1 {
+    display: inline-block;
+    padding: 6px 64px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: $a;
+    margin-top: 220px;
+    margin-left: 100px;
+  }
+
+  header {
+    .logo {
+      float: left;
+      width: 250px;
+      height: 150%;
+    }
+
+    nav {
+      padding: 30px;
+      float: right;
+
+      width: 580px;
+      border-left: 1px solid $border-bottom;
+      border-right: 1px solid $border-bottom;
+      margin-top: 10px;
+
+      a {
+        display: inline-block;
+        padding: 6px 64px;
+        text-decoration: none;
+        text-transform: uppercase;
+        color: $a;
+      }
+    }
+  }
+
+  #content {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .btn-top {
+    display: inline-block;
+    background: $acolor;
+    color: $contentBackground;
+    font-size: 16px;
+    border: none;
+    margin-left: 40%;
+    padding: 10px 60px;
+    margin-top: 0px;
+    text-transform: uppercase;
+    text-decoration: none;
+
+  }
+}
+
+.btn {
+  background: $acolor;
+  color: $contentBackground;
+  font-size: 16px;
+  border: none;
+  margin-left: 65%;
+  padding: 10px 60px;
+}
+
+#content {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.toolbar {
+  float: left;
+  clear: both;
+
+  input {
+
+    display: inline-block;
+
+    color: $contcolor;
+    border: 1px solid $contcolor;
+    padding: 5px 15px;
+    height: 30px;
+    margin-left: 440%;
+    margin-top: 360px;
+  }
+
+  &::placeholder {
+    color: $contcolor;
+
+  }
+}
+
+.post-list {
+  float: left;
+  margin-top: 400px;
+
+  article {
+    display: flex;
+    width: $articleWidth;
+    background: $articlebackground;
+    margin: 20px 10px 0px 10px;
+    padding: 10px;
+
+    &:nth-child(odd) {
+      clear: both;
+    }
+
+    div {
+      margin: 0px 10px 20px;
+
+      .post-description {
+        margin: 0px;
+        display: flex;
+        padding: 8px;
+        clear: both;
+        font-size: 12px;
+        color: $postcolor;
+        border-bottom: 1px solid $border-bottom;
+      }
+
+      h3 {
+        margin: 8px 0px;
+        color: $h3color;
+        text-align: left;
+      }
+
+      p {
+        margin: 0px;
+        color: $contcolor;
+        line-height: 1.5;
+        text-align: left;
+        text-transform: none;
+      }
+
+      .post-description {
+        color: $postcolor;
+
+      }
+    }
+  }
+}
+
+h1 {
+
+  color: $contcolor;
+  text-transform: uppercase;
+  text-align: right;
+}
+
+#about {
+  float: left;
+  margin-left: 240px;
+  margin-top: 0px;
+  width: $articleWidth;
+
+  p {
+    color: $contcolor;
+    line-height: 1.5;
+    text-align: left;
+
+  }
+
+  img {
+    width: 100%;
+  }
+}
+
+#contact {
+  float: left;
+  margin-left: 240px;
+  width: 880px;
+  color: $acolor;
+  margin-top: 10px;
+
+  h1 {
+    margin: 0px 0px 5px;
+    color: $contcolor;
+    padding-top: 10px;
+
+  }
+
+  h4 {
+    margin: 0px 0px 10px;
+    text-transform: uppercase;
+    color: $contcolor;
+    text-align: right;
+  }
+
+  input {
+    width: 880px;
+    padding: 7px 10px;
+    margin: 20px 0;
+    height: 30px;
+
+    border: 1px solid $pcolor;
+    font-size: 16px;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  @media (min-width: 700px) {
+    .wrapper {
+      overflow: hidden;
+
+    }
+
+    .wrapper>* {
+      float: left;
+      padding: 2em 2em;
+    }
+  }
+
+  @media (min-width: 700px) {
+    .contacts {
+      width: 30%;
+      min-height: 620px;
+    }
+  }
+
+  @media (min-width: 700px) {
+    .form {
+      width: 70%;
+    }
+  }
+
+  form div {
+    float: left;
+    width: 49%;
+  }
+
+  form div:not(:nth-child(2n)) {
+    margin-right: 2%;
+  }
+
+  form div:nth-last-child(2) {
+    clear: both;
+    width: 100%;
+  }
+
+  body {
+    padding: 1rem;
+  }
+
+  .wrapper {
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.2);
+  }
+
+  .wrapper>* {
+    padding: 1em;
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  /*
+  .contacts {
+    background: #4b5195;
+    color: #fff;
+  }*/
+
+  .form {
+    background: #fff;
+  }
+
+  form label {
+    display: block;
+    text-align: right;
+  }
+
+  input,
+  textarea {
+    padding: 1em;
+  }
+
+  .contain {
+    max-width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1em;
+  }
+
+  @media (min-width: 600px) {
+    .contain {
+      padding: 0;
+    }
+  }
+
+  h3,
+  ul {
+    margin: 0;
+  }
+
+  h3 {
+    margin-bottom: 1rem;
+  }
+
+  input:focus,
+  textarea:focus {
+    outline: 3px solid gold;
+  }
+
+  input,
+  textarea,
+    {
+    width: 100%;
+    border: 1px solid #000;
+  }
+
+  .textarea {
+    display: block;
+    text-align: right;
+    padding: 7px 12px;
+    margin: 8px 0;
+    height: 120px;
+    color: $pcolor;
+    border: 1px solid $pcolor;
+    font-size: 18px;
+  }
+
+  .submit-btn {
+    background: $acolor;
+    color: $contentBackground;
+    text-transform: uppercase;
+    font-size: 16px;
+    border: none;
+    margin-left: 165%;
+    padding: 10px 60px;
+
+  }
+}
+
+footer {
+  float: left;
+  margin-top: 0px;
+  color: $contcolor;
+  font-size: 13px;
+  margin-right: 100px;
+}
