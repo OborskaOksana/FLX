@@ -154,7 +154,6 @@ body {
   position: absolute;
   flex: 1 0 0;
   font-size: 12px;
-  /*  text-align: justify;*/
   padding: 15px 15px;
   top: 82%;
   left: 55%;
@@ -188,11 +187,9 @@ article {
 
 article .description {
   position: relative;
-  /* flex: 1 0 0;*/
   flex-basis: 50%;
   padding: 0px 10px 10px;
-  /*display: flex;
-  align-content: center;*/
+ 
 }
 
 .description h4 {
@@ -327,8 +324,6 @@ article .description {
 .subscribe h6 {
   font-size: 11px;
 }
-
-
 
 .clear {
   clear: both;
