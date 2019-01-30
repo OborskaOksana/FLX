@@ -19,7 +19,7 @@ body {
   font-weight: 400;
 }
 
-.main-wrapper {
+.main-part {
   background: #f3f3f3;
   min-width: 900px;
   max-width: 1200px;
@@ -185,14 +185,14 @@ article {
 }
 
 
-article .description {
+article .lorem {
   position: relative;
   flex-basis: 50%;
   padding: 0px 10px 10px;
  
 }
 
-.description h4 {
+.lorem h4 {
   text-align: center;
   padding: 30px 15px;
   font-size: 11px;
@@ -382,26 +382,26 @@ input::placeholder {
 
 }
 
-.end-wrapper {
+.wrapper-end {
   background-color: #fff;
   padding: 20px 45px;
 }
 
-.end {
+.endfooter {
   border-top: 1px solid #E8E8E8;
   padding-top: 20px;
 }
 
-.footer-wrapper2 {
+.footer-wrappertwo {
   color: #097774;
 }
 
-.menu2 {
+.menufot {
   float: right;
   word-spacing: 10px;
 }
 
-.menu2 a {
+.menufot a {
   color: #000;
   text-decoration: none;
 }
