@@ -11,7 +11,7 @@ if (0 < amount <= 9999999 && 0 < discount <= 99) {
   total = total.fixed(2);
   saved = saved.fixed(2);
   alert(
-    "Price without discount: " + amount + "Discount: " + discount + "Price with discount: " + total + "Saved: " + saved);
+  "Price without discount: "+amount+ "Discount: " +discount+"Price with discount: "+total +"Saved: "+saved);
 } else if (amount <= 0) {
   alert("invalid input data");
 
