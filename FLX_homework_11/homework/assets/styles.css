@@ -1,0 +1,97 @@
+/* Your styles goes here */
+body {
+  margin: 100px;
+  font-family: sans-serif;
+}
+
+hr {
+  border: none;
+  background-color: black;
+  color: black;
+  height: 2px;
+}
+
+.wrapper {
+  margin: 0 auto;
+  padding: 0 20px;
+  border: 1px solid #000000;
+  width: 550px;
+}
+
+.wrapper h1 {
+  text-align: center;
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.wrapper hr {
+  font-weight: bold;
+  margin: 20px 0;
+}
+
+.display-flex {
+  display: flex;
+  justify-content: space-around;
+
+}
+
+.display-flex input {
+  flex-basis: 92%;
+  height: 20px;
+  margin: 4px;
+  border: 1px solid #000000;
+}
+
+.display-button {
+  width: 28px;
+  height: 28px;
+  background: none;
+  border: none;
+  padding: 0px 5px;
+  cursor: pointer;
+}
+
+.display-button i {
+  font-size: 32px;
+}
+
+.display-button-disabled i {
+  color: #888888;
+  cursor: not-allowed;
+}
+
+.todocatlist-item {
+  list-style: none;
+  padding: 5px 0;
+  display: flex;
+  align-items: center;
+}
+
+.todocatlist {
+  padding: 0;
+}
+
+.todocatlist-item span {
+  flex: 1;
+}
+
+.todocatlist-item i {
+  font-size: 28px;
+  padding: 0 5px;
+  cursor: pointer;
+}
+
+.error {
+  color: red;
+  text-align: center;
+}
+
+.catImg {
+  text-align: center;
+  margin: 10px 0;
+}
+
+.catImg img {
+  width: 50px;
+  padding: 20px;
+}

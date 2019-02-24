@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>TODO Cat List</title>
+  <link rel="stylesheet" href="./assets/material-icons/material-icons.css">
+  <link rel="stylesheet" href="./assets/styles.css">
+</head>
+
+<body>
+  <div id="root" class="wrapper">
+    <header>
+      <h1 class="title">TODO Cat List</h1>
+    </header>
+    <div class="display-flex" id='display-flex'>
+      <input type="text" id="display-input" placeholder="Add New Action">
+      <button id="display" class="display-button display-button-disabled"><i class="material-icons">add_box</i></button>
+    </div>
+    <hr>
+    <ul id="todocatlist" class="todocatlist">
+    </ul>
+    <div class="catImg">
+      <img src="assets/img/cat.png" alt="cat" />
+    </div>
+  </div>
+
+  <script src="./src/app.js"></script>
+</body>
+
+</html>
