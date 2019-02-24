@@ -3,16 +3,15 @@ const todocatlist = rootNode.querySelector('#todocatlist');
 const minLength = 0;
 const maxItems = 10;
 const renderItem = (text) => {
-  const newItem = document.createElement('li');
-  newItem.classList.add('todocatlist-item');
-  newItem.classList.add('dragged-item');
-  newItem.draggable = 'true';
-  newItem.innerHTML = `
+  const addItem = document.createElement('li');
+  addItem.classList.add('todocatlist-item');
+  addItem.classList.add('dragged-item');
+  addItem.draggable = 'true';
+  addItem.innerHTML = `
     <i class="material-icons todocatlist-status">check_box_outline_blank</i>
     <span>${text}</span>
-    <i class="material-icons todocatlist-delete">delete</i>
-`;
-  return newItem;
+    <i class="material-icons todocatlist-delete">delete</i> `;
+  return addItem;
 }
 
 window.onload = function () {
@@ -29,9 +28,9 @@ window.onload = function () {
     }
 
     const input = document.getElementById('display-input');
-    const newItem = renderItem(input.value);
+    const addItem = renderItem(input.value);
 
-    todocatlist.appendChild(newItem);
+    todocatlist.appendChild(addItem);
     input.value = '';
     document.getElementById('display').classList.add('display-button-disabled');
     initEvents();
@@ -55,9 +54,9 @@ window.onload = function () {
   }
 
   const displayMax = () => {
-    const todolistLength = document.querySelectorAll('.todocatlist-item').length;
-    if (todolistLength >= maxItems) {
-      const message= document.createElement('p');
+    const todocatlistLength = document.querySelectorAll('.todocatlist-item').length;
+    if (todocatlistLength >= maxItems) {
+      const message = document.createElement('p');
       message.classList.add('error');
       message.innerHTML = 'Maximum item per list are created';
       document.getElementById('display-input').disabled = 'true';
